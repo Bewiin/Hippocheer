@@ -1,0 +1,51 @@
+:root{
+    --bg : linear-gradient(#FFF7AD , #FFA9F9 80% );
+    --bgt2 :linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);;
+    --bgt3 : linear-gradient(#F69F98,#FDD5C8,#FAF2E8,#5EE1F1);
+    --bgt4 : linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    --backgroundheader : linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    --tgrey : #535353;
+    --fontFamily : 'Arial';
+    --heiht : '12px';
+    --taille_theme : 10vw;
+}
+@font-face {
+    font-family: 'AmaticSC';
+    src: url(./AmaticSC-Bold.ttf) format('truetype');
+
+}
+#formulaire_inscription{
+    display: grid;
+    grid-template-rows: 6;
+    grid-template-columns: 10vw 80vw 10vw;
+}
+
+#formulaire_inscription>label{
+    grid-column: 2;
+    padding: 1.5%;
+    font-family: var(--fontFamily)
+}
+#formulaire_inscription>input:not(#sub){
+    grid-column: 2;
+    padding: 0.5em;
+    height: 5vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:solid rgb(197, 197, 197) 2px;
+    background-color: #e6e9f0;
+    font-size: 5vw;
+    font-family: var(--fontFamily);
+    
+}
+#sub{
+    margin-top: 2vh;
+    grid-column: 2;
+    height: 5vh;
+    border:solid rgb(139, 139, 139) 2px;
+    background-color: #e6e9f0;
+    font-size: 7vw;
+    font-weight: bolder;
+    font-family: 'AmaticSC';
+    
+}

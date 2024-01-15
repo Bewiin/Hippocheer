@@ -1,0 +1,30 @@
+:root{
+    --bg : linear-gradient(#FFF7AD , #FFA9F9 80% );
+    --bgt2 :linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);;
+    --bgt3 : linear-gradient(#F69F98,#FDD5C8,#FAF2E8,#5EE1F1);
+    --bgt4 : linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    --backgroundheader : linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    --tgrey : #535353;
+    --fontFamily : 'Arial';
+    --heiht : '12px';
+    --taille_theme : 10vw;
+}
+
+body{
+    height: 100vh;
+}
+table {
+    margin-left: 5vw;
+    width: 25vw;
+}
+
+table, td {
+    padding: 2vw;
+    border-bottom: 3px solid var(--tgrey);
+    /* border-left: 3px solid var(--tgrey); */
+    border-right: 3px solid var(--tgrey);
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+
