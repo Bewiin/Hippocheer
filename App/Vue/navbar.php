@@ -1,4 +1,5 @@
 <?php ob_start()?>
+<?php if(isset($_SESSION["connected"])):?>
 <header>
         <h1>HippoCheer</h1>
             <div id="Logo"><img src="/hippocheer/Public/asset/images/hippos5-removebg-preview.png"></div>
@@ -11,5 +12,6 @@
                         <div id="theme4" class="btn-theme"></div>
                     </div>
                 </div>
-    </header>
+    </header> 
+<?php endif?>    
 <?php $navbar = ob_get_clean()?>

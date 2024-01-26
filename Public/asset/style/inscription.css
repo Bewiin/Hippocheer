@@ -32,6 +32,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    border-radius: 5px;
     border-bottom:solid rgb(197, 197, 197) 2px;
     background-color: #e6e9f0;
     font-size: 5vw;

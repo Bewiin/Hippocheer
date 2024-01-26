@@ -28,6 +28,12 @@
             Template::render('navbar.php', 'Connexion', 'vueConnexion.php', 'footer.php', 
             $error, ['script.js', 'main.js'], ['style.css', 'main.css', 'connexion.css']);
         }
+        public function deconnexion(){
+            $error = '';
+            session_destroy();
+            unset($_COOKIE);
+            header('location:/hippocheer');
+        }
         public function getInscripton(){
             $error = '';
             if(isset($_POST['submit'])){

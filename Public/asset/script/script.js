@@ -5,7 +5,7 @@ menu.style.border = "red";*/
 // Récupère l'élément dont vous souhaitez récupérer la propriété CSS
 
 //THEME 1 :
-var theme1 =document.querySelector('#theme1');
+let theme1 =document.querySelector('#theme1');
 let value1 = getComputedStyle(theme1);
 const bgt1 = value1.backgroundImage;
 console.log(bgt1);
@@ -24,7 +24,7 @@ theme1.addEventListener('click',()=>{
 })
 
 //THEME 2 :
-var theme2 = document.querySelector('#theme2');
+let theme2 = document.querySelector('#theme2');
 let value2 = getComputedStyle(theme2);
 console.log(value2);
 const bgt2 = value2.backgroundImage;
@@ -47,7 +47,7 @@ theme2.addEventListener('click',()=>{
     mainContent.style.setProperty("background", bgt2);
 })
 //THEME 3 :
-var theme3 = document.querySelector("#theme3");
+let theme3 = document.querySelector("#theme3");
 let value3 = getComputedStyle(theme3);
 const bgt3 = value3.backgroundImage;
 
