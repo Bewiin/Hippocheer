@@ -17,6 +17,7 @@
     margin: 0;
 }
 body{
+    min-height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -198,7 +199,7 @@ main p{
 
 footer {
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-image: var(--backgroundheader);
     height: 10vh;

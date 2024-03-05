@@ -15,6 +15,7 @@
     //test si l'url posséde une route sinon on renvoi à la racine
     $path = isset($url['path']) ? $url['path'] : '/';
     //routeur
+    if(isset($_SESSION["connected"])){
     switch ($path) {
         case '/hippocheer/':
             $homeController->getHome();
@@ -23,10 +24,10 @@
             $tableauController->getTableau();
             break;
         case '/hippocheer/utilisateur/inscription':
-            $utilisateurController->getInscripton();
+            $homeController->getHome();
             break;
         case '/hippocheer/utilisateur/connexion':
-            $utilisateurController->getConnexion();
+            $homeController->getHome();
             break;
         case '/hippocheer/utilisateur/profil':
             $utilisateurController->getProfil();
@@ -35,4 +36,18 @@
             $homeController->get404();
             break;
     }
+} else {
+    switch ($variable) {
+        case '/hippocheer/utilisateur/connexion':
+            $utilisateurController->getConnexion();
+            break;
+        case '/hippocheer/utilisateur/inscription':
+            $utilisateurController->getInscripton();
+            break;
+        
+        default:
+            # code...
+            break;
+    }
+}
 ?>

@@ -10,7 +10,7 @@
                 <li id="tableau"><a href="./utilisateur/tableau">Mon tableau</a></li>
                 <li id="rewards">Récompenses</li>
                 <li id="pratiques">Bonnes pratiques</li>
-                <li id="history">Historique</li>
+                <li id="history"><a href="/hippocheer/utilisateur/connexion">Connexion</a></li>
             </ul>
         </nav>
         <div id="en-tete-main"><img id="menu" src="/hippocheer/Public/asset/images/🦆 icon _burger menu left_.svg">
