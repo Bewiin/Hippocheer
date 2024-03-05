@@ -45,6 +45,35 @@ header {
     background-image: var(--backgroundheader);
     /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
 }
+a{
+    text-decoration: none;
+}
+#connected{
+    grid-row: 1;
+    grid-column: 3;
+    align-self:center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 10vw;
+    
+    
+}
+#connected>p{
+    align-self: center;
+    font-size: 1.2em;
+    font-family: 'Raleway';
+    color: var(--tgrey);
+    transform: translateY(7vh);
+}
+i{
+    transform: translateY(5vh);
+    align-self: center;
+    
+}
+
+
 
 h1 {
     margin-left: 8vw;
@@ -201,7 +230,7 @@ nav{
     position: absolute;
     background-color: #909090;
 }
-ul{
+nav>ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -209,16 +238,14 @@ ul{
     margin: 0;
     padding: 0;
 }
-ul li{
+nav>ul li{
     color: #FFA9F9;
     font-family: 'Raleway';
     text-decoration: none;
     list-style: none;
     text-align: center;
 }
-ul :nth-child(odd){
-    color:#FFF7AD ;
-}
+
 #titre-inscription{
     margin-left: 20vw;
     

@@ -1,6 +1,7 @@
 <?php
     namespace App\Controller;
     use App\Model\Utilisateurs;
+    use App\Model\Enfants;
     use App\Utils\Utilitaire;
     use App\Vue\Template;
 
@@ -20,6 +21,7 @@
                         $_SESSION["prenom"] = $recup->getPrenom();
                         $_SESSION["pseudo"] = $recup->getPseudo();
                         $_SESSION["mail"] = $recup->getMail();
+                        $_SESSION["id"] = $recup->getId();
                         header('location:/hippocheer');
                     }
 
@@ -62,7 +64,28 @@
             Template::render('navbar.php', 'Inscription', 'vueInscription.php', 'footer.php', 
             $error, ['script.js', 'main.js'], ['style.css', 'main.css', 'inscription.css']);
         }
+        public function getProfil(){
+            $error = '';
+            $enfant = new Enfants;
+            $mail = $_SESSION['mail'];
+            $this->setMail($mail);
+            $enfant->setParent($this->getUtilisateurByMail());
+            $test = $enfant->selectEnfantByIdParent();
+            $info = [];
+            for ($i=0; $i < count($test) ; $i++) { 
+                    $info[] = $test[$i]->getPrenomEnfant();
+            }
+            
+            // dd($info);
+
+            // if(isset($_POST['submit'])){
+
+            // }
+            Template::render('navbar.php', 'Profil', 'vueProfil.php', 'footer.php', 
+            $error, ['script.js', 'main.js'], ['style.css', 'main.css', 'profil.css'],$info);
+        }
     }
+    
 
 
 ?>

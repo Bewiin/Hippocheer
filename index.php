@@ -28,6 +28,9 @@
         case '/hippocheer/utilisateur/connexion':
             $utilisateurController->getConnexion();
             break;
+        case '/hippocheer/utilisateur/profil':
+            $utilisateurController->getProfil();
+            break;
         default:
             $homeController->get404();
             break;

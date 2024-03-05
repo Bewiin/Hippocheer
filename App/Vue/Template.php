@@ -1,7 +1,7 @@
 <?php
 namespace App\Vue;
 class Template{
-    public static function render($navbar,$title,$content,$footer,$error, array $js, array $css)
+    public static function render($navbar,$title,$content,$footer,$error, array $js, array $css,$info = [])
     {
         if(file_exists('./App/Vue/'.$content)){
             include './App/Vue/'.$navbar;
