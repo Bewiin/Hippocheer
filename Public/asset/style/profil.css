@@ -1,0 +1,35 @@
+#formulaire_inscription{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    height: auto;
+}
+
+#formulaire_inscription>label{
+    grid-column: 2;
+    padding: 1.5%;
+    font-family: var(--fontFamily)
+}
+#formulaire_inscription>input:not(#sub){
+    grid-column: 2;
+    padding: 0.5em;
+    height: 5vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom:solid rgb(197, 197, 197) 2px;
+    background-color: #e6e9f0;
+    font-size: 5vw;
+    font-family: var(--fontFamily);
+}
+#sub{
+    margin-top: 2vh;
+    grid-column: 2;
+    height: 5vh;
+    border:solid rgb(139, 139, 139) 2px;
+    background-color: #e6e9f0;
+    font-size: 7vw;
+    font-weight: bolder;
+    font-family: 'AmaticSC';
+    
+}

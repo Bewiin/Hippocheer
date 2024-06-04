@@ -31,7 +31,7 @@
             <label for="confirm_password">Confirmer mot de passe:</label>
                 <input type="password" name="confirm_password" id="">     
         
-        <input type="submit" value="S'inscrire" name="submit" id="sub">
+        <input type="submit" value="Modifier" name="submit" id="sub">
         </form>
         <form action="" method="post">
             <input type="submit" value="Deconnexion" name="submit2">
