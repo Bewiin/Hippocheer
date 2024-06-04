@@ -37,13 +37,16 @@
             break;
     }
 } else {
-    switch ($variable) {
+    switch ($path) {
         case '/hippocheer/utilisateur/connexion':
             $utilisateurController->getConnexion();
             break;
         case '/hippocheer/utilisateur/inscription':
             $utilisateurController->getInscripton();
             break;
+        case '/hippocheer/':
+                $homeController->getHome();
+                break;
         
         default:
             # code...

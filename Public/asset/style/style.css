@@ -14,7 +14,7 @@
 }
 *{
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 body{
     min-height: 100vh;
@@ -174,7 +174,8 @@ h4{
     background: var(--bg);
     margin-top: 0;
     width: 100vw;
-    height: 70vh;
+    height: auto;
+    min-height: 70vh;
     
 }
 main p{
@@ -240,14 +241,33 @@ nav>ul{
     padding: 0;
 }
 nav>ul li{
-    color: #FFA9F9;
     font-family: 'Raleway';
     text-decoration: none;
     list-style: none;
     text-align: center;
 }
+a{
+    text-decoration: none;
+    color: red
+}
+a:visited {
+   color:#FFF7AD;
+}
 
 #titre-inscription{
     margin-left: 20vw;
     
+}
+
+@media (min-width: 768px) {
+    .responsive-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .responsive-flex > * + * {
+        margin-left: 2.5rem;
+    }
+
 }

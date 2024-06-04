@@ -18,6 +18,7 @@
     display: grid;
     grid-template-rows: 6;
     grid-template-columns: 10vw 80vw 10vw;
+    height: auto;
 }
 
 #formulaire_inscription>label{

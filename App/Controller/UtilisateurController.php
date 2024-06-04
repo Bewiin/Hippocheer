@@ -81,6 +81,9 @@
             for ($i=0; $i < count($test) ; $i++) { 
                     $info[] = $test[$i]->getPrenomEnfant();
             }
+            if(isset($_POST["submit2"])){
+                $this->deconnexion();
+            }
             
             // dd($info);
 

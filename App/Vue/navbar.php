@@ -1,5 +1,4 @@
 <?php ob_start()?>
-<<<<<<< HEAD
 <?php if(isset($_SESSION['connected'])): ?>
 <header>
         <h1>HippoCheer</h1>
@@ -25,9 +24,6 @@
 
     <?php else:?>
 
-=======
-<?php if(isset($_SESSION["connected"])):?>
->>>>>>> 6449e1cca90dc8d254fbdc44c766edbb069e9d80
 <header>
         <h1>HippoCheer</h1>
             <div id="Logo"><img src="/hippocheer/Public/asset/images/hippos5-removebg-preview.png"></div>
@@ -40,11 +36,6 @@
                         <div id="theme4" class="btn-theme"></div>
                     </div>
                 </div>
-<<<<<<< HEAD
     </header>
 <?php endif;?>
-=======
-    </header> 
-<?php endif?>    
->>>>>>> 6449e1cca90dc8d254fbdc44c766edbb069e9d80
 <?php $navbar = ob_get_clean()?>

@@ -10,12 +10,16 @@ let value1 = getComputedStyle(theme1);
 const bgt1 = value1.backgroundImage;
 console.log(bgt1);
 
+
+
+
 theme1.addEventListener('click',()=>{
-    let tableau = document.getElementById('tableau');
+    let tableau = document.getElementById('tableau').childNodes;
     let rewards = document.getElementById('rewards');
     let pratiques = document.getElementById('pratiques');
     let history = document.getElementById('history');
-    tableau.style.color = '#FFF7AD';
+    console.log(tableau[0].style)
+    tableau[0].style.color = '#FFF7AD';
     rewards.style.color = '#FFA9F9';
     pratiques.style.color = '#FFF7AD';
     history.style.color = '#FFA9F9';
@@ -26,9 +30,9 @@ theme1.addEventListener('click',()=>{
 //THEME 2 :
 let theme2 = document.querySelector('#theme2');
 let value2 = getComputedStyle(theme2);
-console.log(value2);
+
 const bgt2 = value2.backgroundImage;
-console.log(bgt2);
+
   
 
 
