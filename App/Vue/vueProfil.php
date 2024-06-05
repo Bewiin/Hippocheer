@@ -36,9 +36,11 @@
         <form action="" method="post">
             <input type="submit" value="Deconnexion" name="submit2">
         </form>
-        <?php foreach($info as $value): ?>
+        <div id="childs">
+            <?php foreach($info as $value): ?>
             <p><?=$value?></p>
-            <?php endforeach ?>
+        <?php endforeach ?></div>
+        
         <?=$error?>
     </main>
 

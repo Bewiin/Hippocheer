@@ -33,3 +33,12 @@
     font-family: 'AmaticSC';
     
 }
+
+#childs {
+    display: flex;
+    position: relative;
+    height: 20vh;
+}
+#childs>p {
+    width: 25%;
+}

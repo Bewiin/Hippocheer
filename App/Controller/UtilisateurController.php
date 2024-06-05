@@ -76,20 +76,17 @@
             $mail = $_SESSION['mail'];
             $this->setMail($mail);
             $enfant->setParent($this->getUtilisateurByMail());
-            $test = $enfant->selectEnfantByIdParent();
+            $enfants = $enfant->selectEnfantByIdParent();
             $info = [];
-            for ($i=0; $i < count($test) ; $i++) { 
-                    $info[] = $test[$i]->getPrenomEnfant();
+            for ($i=0; $i < count($enfants) ; $i++) { 
+                    $info[] = $enfants[$i]->getPrenomEnfant();
             }
+            
             if(isset($_POST["submit2"])){
                 $this->deconnexion();
             }
             
-            // dd($info);
-
-            // if(isset($_POST['submit'])){
-
-            // }
+            
             Template::render('navbar.php', 'Profil', 'vueProfil.php', 'footer.php', 
             $error, ['script.js', 'main.js'], ['style.css', 'main.css', 'profil.css'],$info);
         }
