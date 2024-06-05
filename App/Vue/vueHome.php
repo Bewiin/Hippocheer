@@ -1,5 +1,5 @@
 <?php ob_start()?>
-    <?php if(isset($_SESSION['connected'])):?>
+    <?php if(!isset($_SESSION['connected'])):?>
     <main id="main-content">
         <nav>
             <svg id="croix" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
@@ -36,7 +36,7 @@
                 <li id="tableau"><a href="./utilisateur/tableau">Mon tableau</a></li>
                 <li id="rewards">Récompenses</li>
                 <li id="pratiques">Bonnes pratiques</li>
-                <li id="history">Historique</li>
+                <li id="history"><a href="/hippocheer">Historique</a></li>
             </ul>
         </nav>
         <div id="en-tete-main"><img id="menu" src="/hippocheer/Public/asset/images/🦆 icon _burger menu left_.svg">

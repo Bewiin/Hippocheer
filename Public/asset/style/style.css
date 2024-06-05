@@ -200,7 +200,7 @@ main p{
 
 footer {
     display: flex;
-    position: relative;
+    position: fixed;
     bottom: 0;
     background-image: var(--backgroundheader);
     height: 10vh;
@@ -246,13 +246,8 @@ nav>ul li{
     list-style: none;
     text-align: center;
 }
-a{
-    text-decoration: none;
-    color: red
-}
-a:visited {
-   color:#FFF7AD;
-}
+
+
 
 #titre-inscription{
     margin-left: 20vw;

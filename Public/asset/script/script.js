@@ -2,31 +2,24 @@
 menu.style.backgroundColor = "red";
 menu.style.border = "red";*/
 
-
+let theme1 =document.querySelector('#theme1');
+let value1 = getComputedStyle(theme1);
+const bgt1 = value1.backgroundImage;
 window.onload = () => {
-    console.log("coucou")
     let tableau = document.getElementById('tableau').childNodes;
     let rewards = document.getElementById('rewards');
     let pratiques = document.getElementById('pratiques');
-    let history = document.getElementById('history');
-    console.log(tableau[0].style)
+    let history = document.getElementById('history').childNodes;
     tableau[0].style.color = '#FFF7AD';
     rewards.style.color = '#FFA9F9';
     pratiques.style.color = '#FFF7AD';
-    history.style.color = '#FFA9F9';
+    history[0].style.color = '#FFA9F9';
     let mainContent=document.getElementById("main-content");
     mainContent.style.setProperty("background", bgt1);
 }
 // Récupère l'élément dont vous souhaitez récupérer la propriété CSS
 
 //THEME 1 :
-let theme1 =document.querySelector('#theme1');
-let value1 = getComputedStyle(theme1);
-const bgt1 = value1.backgroundImage;
-console.log(bgt1);
-
-
-
 
 theme1.addEventListener('click',()=>{
     let tableau = document.getElementById('tableau').childNodes;
@@ -107,10 +100,13 @@ let nav = document.querySelector('nav');
 
  menu.addEventListener('click', ()=>{
     nav.style.transform = 'translateY(0)';
+    document.body.style.overflow = 'hidden';
  })
  let croix = document.getElementById('croix');
  croix.addEventListener('click',()=>{
     nav.style.transform = 'translateY(-70vh)';
+    document.body.style.removeProperty("overflow");
+    
  })
 //FIN MENU
 
